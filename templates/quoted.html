@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+<div class="text-center mb-3">
+    <div class="container">
+        <h3>Name: <span class="text-primary">{{ stock.name }}</span> </h3>
+        <h3>Price: <span class="text-primary">{{ stock.price | usd }}</span> </h3>
+        <h3>Symbol: <span class="text-primary">{{ stock.symbol }}</span> </h3>
+    </div>
+</div>
+
+
+
+{% endblock %}
